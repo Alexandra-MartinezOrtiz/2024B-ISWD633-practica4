@@ -53,11 +53,18 @@ docker build -t <nombre imagen>:<tag> .
 ### Ejecutar el archivo Dockerfile y construir una imagen en la versión 1.0
 No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 ```
+docker run -d -p 80:80 --name servidor-apache mi-apache-server:1.0
 
 ```
 
 **¿Cuántos pasos se han ejecutado?**
-10 pasos
+6 pasos
+1._Verificar el directorio: Asegurarse de estar en el directorio correcto con el Dockerfile.
+2._Construir la imagen: Ejecutar el comando docker build para construir la imagen con la etiqueta 1.0.
+3._Verificar la imagen construida: Comprobar la existencia de la imagen con docker images.
+4._Ejecutar el contenedor: Iniciar el contenedor con docker run.
+5._Verificar el estado del contenedor: Comprobar que el contenedor se esté ejecutando con docker ps.
+6._Acceso a la aplicación web: Acceder a http://localhost para verificar que la aplicación web esté funcionando.
 
 ### Inspeccionar la imagen creada
 ![image](https://github.com/user-attachments/assets/9799b992-5049-45ab-a48d-fc50eaede615)

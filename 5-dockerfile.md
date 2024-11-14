@@ -58,7 +58,9 @@ docker run -d -p 80:80 --name servidor-apache mi-apache-server:1.0
 ```
 
 **¿Cuántos pasos se han ejecutado?**
+
 6 pasos
+
 1._Verificar el directorio: Asegurarse de estar en el directorio correcto con el Dockerfile.
 2._Construir la imagen: Ejecutar el comando docker build para construir la imagen con la etiqueta 1.0.
 3._Verificar la imagen construida: Comprobar la existencia de la imagen con docker images.
